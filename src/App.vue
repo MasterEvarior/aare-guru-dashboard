@@ -9,6 +9,23 @@
         </v-layout>
       </v-container>
     </v-main>
+    <v-footer>
+      <v-btn
+        href="https://aare.guru"
+        target="_blank"
+        text>
+        <span class="mr-2">Alli Date si vo aare.guru</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+      <v-spacer/>
+      <v-btn
+        href="https://github.com/MasterEvarior/aare-guru-dashboard"
+        target="_blank"
+        text>
+        <span class="mr-2">Lueg ds projekt uf GitHub a</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-footer>
   </v-app>
 </template>
 
