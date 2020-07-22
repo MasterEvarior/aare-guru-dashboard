@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <InfoCard city="Bern"/>
+      <InfoCard cityUrl="https://aareguru.existenz.ch/v2018/today?city=brienz"/>
     </v-main>
   </v-app>
 </template>

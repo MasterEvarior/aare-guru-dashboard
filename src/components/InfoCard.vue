@@ -18,7 +18,7 @@
 export default {
     name: 'InfoCard',
     props: {
-        city: {
+        cityUrl: {
             type: String,
             required: true
         }
@@ -29,7 +29,7 @@ export default {
         }
     },
     mounted() {
-        let url = this.$apiBaseUrl + "/today?city=" + this.city + "&app=" + this.$appName + "&version=" + this.$appVersion;
+        let url = this.cityUrl + "&app=" + this.$appName + "&version=" + this.$appVersion;
         fetch(url)
             .then(response => {return response = response.json()})
             .then(data => {this.response = data});
