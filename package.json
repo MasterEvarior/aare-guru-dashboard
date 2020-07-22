@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "randomcolor": "^0.6.2",
     "vue": "^2.6.11",
+    "vue-randomcolor": "^1.0.4",
     "vuetify": "^2.2.11"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 <template>
     <v-card
-    color="pink"
+    :color="this.$randomColor()"
     >
     <v-card-title>{{ response.name }}</v-card-title>
     <v-card-text>

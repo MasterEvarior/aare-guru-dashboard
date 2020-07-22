@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
+import VueRandomColor from 'vue-randomcolor';
 
+Vue.use(VueRandomColor)
 Vue.config.productionTip = false
 Vue.prototype.$appName = "aare-guru-dashboard";
 Vue.prototype.$appVersion = "0.1";
