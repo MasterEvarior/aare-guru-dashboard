@@ -1,15 +1,19 @@
 <template>
   <v-app>
     <v-main>
+      <InfoCard city="Bern"/>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import InfoCard from './components/InfoCard';
 
 export default {
   name: 'App',
-  components: {},
+  components: {
+    InfoCard
+  },
   data: () => ({
     //
   }),
