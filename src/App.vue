@@ -1,9 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <div v-for="city in cities" v-bind:key="city.city" >
-        <InfoCard :cityUrl="city.today"/>
-      </div>
+      <v-container>
+        <v-layout row wrap justify-space-around>
+          <v-flex xs12 sm6 md6 lg4 xl3 v-for="city in cities" :key="city.city">
+            <InfoCard :cityUrl="city.today"/>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-main>
   </v-app>
 </template>

@@ -1,11 +1,14 @@
 <template>
     <v-card
+    flat
     :color="this.$randomColor({ luminosity: 'dark', hue: 'random'})"
+    class="ma-4"
     >
     <v-card-title>{{ response.name }}</v-card-title>
     <v-card-text>
-        {{ response.aare_prec }}°C
-        {{ response.text }}
+        D Temperatur isch {{ response.aare_prec }}°C
+        <br>
+        Üses Fazit: {{ response.text }}
     </v-card-text>
     <v-card-actions>
         <v-btn outlined>Meh Infos</v-btn>
