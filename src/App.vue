@@ -14,8 +14,16 @@ export default {
   components: {
     InfoCard
   },
-  data: () => ({
-    //
-  }),
+  data: function() {
+      return {
+        cities: {}
+      }
+  },
+  mounted() {
+    let url = this.$apiBaseUrl + "/cities";
+    fetch(url)
+      .then(response => {return response.json()})
+      .then(data => this.cities = data);
+  }
 };
 </script>
