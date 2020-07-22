@@ -11,7 +11,11 @@
         Üses Fazit: {{ response.text }}
     </v-card-text>
     <v-card-actions>
-        <v-btn outlined>Meh Infos</v-btn>
+        <v-btn outlined
+            :href="infoUrl"
+            target="_blank">
+            Meh Infos
+        </v-btn>
     </v-card-actions>
     </v-card>
 </template>
@@ -36,6 +40,11 @@ export default {
         fetch(url)
             .then(response => {return response = response.json()})
             .then(data => {this.response = data});
+  },
+  computed: {
+      infoUrl: function(){
+          return "https://aare.guru/#" + this.response.name;
+      }
   }
 }
 </script>
