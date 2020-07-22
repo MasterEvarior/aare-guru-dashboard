@@ -1,6 +1,6 @@
 <template>
     <v-card
-    :color="this.$randomColor()"
+    :color="this.$randomColor({ luminosity: 'dark', hue: 'random'})"
     >
     <v-card-title>{{ response.name }}</v-card-title>
     <v-card-text>
