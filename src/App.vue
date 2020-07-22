@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-main>
-      <InfoCard cityUrl="https://aareguru.existenz.ch/v2018/today?city=brienz"/>
+      <div v-for="city in cities" v-bind:key="city.city" >
+        <InfoCard :cityUrl="city.today"/>
+      </div>
     </v-main>
   </v-app>
 </template>
