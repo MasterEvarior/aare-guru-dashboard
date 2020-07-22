@@ -9,7 +9,7 @@ You can check it out [here](https://masterevarior.github.io/aare-guru-dashboard/
  - GitHub-Actions(for automating the deployment)
 
 ## Deployment to GitHub-Pages
-The deployment has been automated with GitHub-Actions with help from [this](https://dev.to/rolanddoda/deploy-to-github-pages-like-a-pro-with-github-actions-4hdg) guide.
+The deployment has been automated with GitHub-Actions with full credit going to [this](https://dev.to/rolanddoda/deploy-to-github-pages-like-a-pro-with-github-actions-4hdg) guide.
 
 ## Project setup
 ```
